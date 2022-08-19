@@ -12,7 +12,7 @@ A JavaScript API allows the user to use function to make their code less and fas
 * Download **OnyxAPI.js**.
 * Put it in the folder where your HTML is.
 * Use the code bellow.
-```
+```html
 <script src="./OnyxAPI.js"></script>
 ```
 
