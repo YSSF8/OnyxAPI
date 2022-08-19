@@ -8,6 +8,14 @@ A JavaScript API allows the user to use function to make their code less and fas
 * Custom "**console log**".
 * Added toast, a little message box appears and disappears quickly.
 
+### How to use:
+* Download **OnyxAPI.js**.
+* Put it in the folder where your HTML is.
+* Use the code bellow.
+```
+<script src="./OnyxAPI.js"></script>
+```
+
 ### Screenshots:
 <img src="./Screenshots/Screenshot1.png" height="350" alt="">
 <img src="./Screenshots/Screenshot2.png" height="350" alt="">
