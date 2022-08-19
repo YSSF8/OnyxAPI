@@ -15,6 +15,7 @@ A JavaScript API allows the user to use function to make their code less and fas
 ```html
 <script src="./OnyxAPI.js"></script>
 ```
+* Paste the code at the end of the HTML, before the end of **body**.
 
 ### Screenshots:
 <img src="./Screenshots/Screenshot1.png" height="350" alt="">
