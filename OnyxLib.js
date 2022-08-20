@@ -1,4 +1,4 @@
-// Simple alert
+// Simple alert box
 function OnyxAlert(alt) {
     // Parent creation
     const parent = document.createElement('div');
@@ -15,6 +15,7 @@ function OnyxAlert(alt) {
     parent.style.left = '35.5%';
     parent.style.borderRadius = '8px';
     parent.style.padding = '5px 22px';
+    parent.style.color = '#fff';
     parent.style.transform = 'scale(0)';
     parent.style.transition = 'transform 200ms ease-in-out';
 
@@ -35,7 +36,7 @@ function OnyxAlert(alt) {
         parent.style.transform = 'scale(1)';
     });
 
-    // Removes the alert after clicking OK
+    // Removes the alert after clicking "OK"
     btn.addEventListener('click', () => {
         parent.style.transform = 'scale(0)';
         setTimeout(() => {
@@ -48,6 +49,7 @@ function OnyxAlert(alt) {
     btn.style.background = '#1e1e1e';
     btn.style.outline = 'none';
     btn.style.border = 'none';
+    btn.style.color = '#fff';
     btn.style.padding = '10px';
     btn.style.borderRadius = '5px';
     btn.style.cursor = 'pointer';
@@ -65,7 +67,7 @@ function OnyxAlert(alt) {
     }
 }
 
-// Simple Prompt
+// Simple prompt box
 function OnyxPrompt(pmt, ipt) {
     // Parent creation
     const parent = document.createElement('div');
@@ -78,6 +80,7 @@ function OnyxPrompt(pmt, ipt) {
     parent.style.width = '25rem';
     parent.style.height = '15rem';
     parent.style.position = 'absolute';
+    parent.style.color = '#fff';
     parent.style.top = '32%';
     parent.style.left = '35.5%';
     parent.style.borderRadius = '8px';
@@ -104,6 +107,8 @@ function OnyxPrompt(pmt, ipt) {
     _input.style.border = 'none';
     _input.style.borderRadius = '5px';
     _input.style.padding = '5px';
+    _input.style.color = '#fff';
+    _input.style.background = '#1e1e1e';
 
     if (_input.value == 'undefined') {
         _input.value = '';
@@ -137,6 +142,7 @@ function OnyxPrompt(pmt, ipt) {
     btn.style.borderRadius = '5px';
     btn.style.cursor = 'pointer';
     btn.style.position = 'absolute';
+    btn.style.color = '#fff';
     btn.style.bottom = '20px';
     btn.style.right = '20px';
     btn.style.transition = 'background 200ms ease-in-out';
@@ -148,6 +154,113 @@ function OnyxPrompt(pmt, ipt) {
     btn.onmouseleave = function () {
         btn.style.background = '#1e1e1e';
     }
+}
+
+// Simpte confirm box
+function OnyxConfirm(alt) {
+    // Parent creation
+    const parent = document.createElement('div');
+    parent.classList.add('onyx-lib-confirm');
+    document.body.appendChild(parent);
+
+    // Parent style
+    parent.style.fontFamily = 'Segoe UI';
+    parent.style.background = '#121212';
+    parent.style.width = '25rem';
+    parent.style.height = '15rem';
+    parent.style.position = 'absolute';
+    parent.style.top = '32%';
+    parent.style.left = '35.5%';
+    parent.style.borderRadius = '8px';
+    parent.style.padding = '5px 22px';
+    parent.style.color = '#fff';
+    parent.style.transform = 'scale(0)';
+    parent.style.transition = 'transform 200ms ease-in-out';
+
+    // Title creation
+    const title = document.createElement('h2');
+    title.classList.add('onyx-lib-title');
+    document.querySelector('.onyx-lib-confirm').appendChild(title);
+    title.innerHTML = alt;
+
+    // OK Button of the panel
+    const okBtn = document.createElement('button');
+    document.querySelector('.onyx-lib-confirm').appendChild(okBtn);
+    okBtn.classList.add('onyx-lib-btn');
+    okBtn.innerHTML = 'OK';
+
+    // OK Button style
+    okBtn.style.fontFamily = 'Segoe UI';
+    okBtn.style.background = '#1e1e1e';
+    okBtn.style.outline = 'none';
+    okBtn.style.border = 'none';
+    okBtn.style.color = '#fff';
+    okBtn.style.padding = '10px';
+    okBtn.style.borderRadius = '5px';
+    okBtn.style.cursor = 'pointer';
+    okBtn.style.position = 'absolute';
+    okBtn.style.bottom = '20px';
+    okBtn.style.right = '20px';
+    okBtn.style.transition = 'background 200ms ease-in-out';
+
+    // OK Button mouse-hover
+    okBtn.onmouseover = function () {
+        okBtn.style.background = '#2b2b2b';
+    }
+    okBtn.onmouseleave = function () {
+        okBtn.style.background = '#1e1e1e';
+    }
+
+    // Cancel Button of the panel
+    const cBtn = document.createElement('button');
+    document.querySelector('.onyx-lib-confirm').appendChild(cBtn);
+    cBtn.classList.add('onyx-lib-btn');
+    cBtn.innerHTML = 'Cancel';
+
+    // OK Button style
+    cBtn.style.fontFamily = 'Segoe UI';
+    cBtn.style.background = '#1e1e1e';
+    cBtn.style.outline = 'none';
+    cBtn.style.border = 'none';
+    cBtn.style.color = '#fff';
+    cBtn.style.padding = '10px';
+    cBtn.style.borderRadius = '5px';
+    cBtn.style.cursor = 'pointer';
+    cBtn.style.position = 'absolute';
+    cBtn.style.bottom = '20px';
+    cBtn.style.right = '65px';
+    cBtn.style.transition = 'background 200ms ease-in-out';
+
+    // OK Button mouse-hover
+    cBtn.onmouseover = function () {
+        cBtn.style.background = '#2b2b2b';
+    }
+    cBtn.onmouseleave = function () {
+        cBtn.style.background = '#1e1e1e';
+    }
+
+    // Appearing transition
+    setTimeout(() => {
+        parent.style.transform = 'scale(1)';
+    });
+
+    // Removes the confirm after clicking "OK"
+    okBtn.addEventListener('click', () => {
+        parent.style.transform = 'scale(0)';
+        console.log('OK button pressed!');
+        setTimeout(() => {
+            parent.remove();
+        }, 201);
+    });
+
+    // Removes the confirm after clicking "OK"
+    cBtn.addEventListener('click', () => {
+        console.log('Cancel button pressed!');
+        parent.style.transform = 'scale(0)';
+        setTimeout(() => {
+            parent.remove();
+        }, 201);
+    });
 }
 
 // Creates elements
@@ -216,6 +329,7 @@ function OnyxNotice(text) {
     nts.style.position = 'fixed';
     nts.style.width = '93.78%';
     nts.style.left = '0';
+    nts.style.color = '#fff';
     nts.style.top = '-3rem';
     nts.style.transition = 'top 200ms ease-in-out';
 
@@ -258,7 +372,7 @@ function OnyxSysNotif(title, ncontent) {
     const header = document.createElement('div');
     document.querySelector('.onyx-lib-sysnotif').appendChild(header);
     header.innerHTML = title;
-    header.style.fontSize = '30px';
+    header.style.fontSize = '20px';
     const br = document.createElement('br')
     document.querySelector('.onyx-lib-sysnotif').appendChild(br);
 
@@ -270,6 +384,7 @@ function OnyxSysNotif(title, ncontent) {
     wn.style.borderRadius = '8px';
     wn.style.bottom = '20px';
     wn.style.right = '-25rem';
+    wn.style.color = '#fff';
     wn.style.transition = 'right 200ms ease-in-out';
 
     // Appearing transition
