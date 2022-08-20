@@ -1,5 +1,5 @@
-# OnyxAPI
-A JavaScript API allows the user to use function to make their code less and faster.
+# Onyx Library
+A JavaScript library allows the user to use function to make their code less and faster.
 
 ### Features:
 * "**createElement**" is now with one line of coding.
@@ -9,11 +9,11 @@ A JavaScript API allows the user to use function to make their code less and fas
 * Added toast, a little message box appears and disappears quickly.
 
 ### How to download and import:
-* Download **OnyxAPI.js**.
+* Download **OnyxLib.js**.
 * Put it in the folder where your HTML is.
 * Use the code bellow.
 ```html
-<script src="./OnyxAPI.js"></script>
+<script src="./OnyxLib.js"></script>
 ```
 * Paste the code at the end of the HTML, before the end of **body**.
 
