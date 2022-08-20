@@ -1,4 +1,4 @@
-# Onyx Library
+# Onyx Library (1.3)
 A JavaScript library allows the user to use more function.
 
 ### Features:
@@ -7,6 +7,10 @@ A JavaScript library allows the user to use more function.
 * Custom prompt box.
 * Custom "**console log**".
 * Added toast, a little message box appears and disappears quickly.
+
+### Changelog:
+* Fixed black text.
+* <a href="https://github.com/YSSF8/OnyxLibrary#onyxconfirm">Added a confirm-box</a>.
 
 ### How to download and import:
 * Download **OnyxLib.js**.
