@@ -10,7 +10,7 @@ A JavaScript library allows the user to use more function.
 
 ### Changelog:
 * Fixed black text.
-* <a href="https://github.com/YSSF8/OnyxLibrary#onyxconfirm">Added a confirm-box</a>.
+* Added a <a href="https://github.com/YSSF8/OnyxLibrary#onyxconfirm">confirm-box</a>.
 
 ### How to download and import:
 * Download **OnyxLib.js**.
