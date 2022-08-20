@@ -26,6 +26,10 @@ OnyxAlert('text');
 ```javascript
 OnyxPrompt('text', 'value of text input');
 ```
+#### OnyxConfirm
+```javascript
+OnyxConfirm('text');
+```
 #### OnyxCreateElement
 ```javascript
 OnyxCreateElement('tag', 'parent', 'class', 'text', 'placeholder (if the tag is input tag)');
