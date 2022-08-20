@@ -1,5 +1,5 @@
 # Onyx Library
-A JavaScript library allows the user to use function to make their code less and faster.
+A JavaScript library allows the user to use more function.
 
 ### Features:
 * "**createElement**" is now with one line of coding.
