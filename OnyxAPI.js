@@ -105,6 +105,10 @@ function OnyxPrompt(pmt, ipt) {
     _input.style.borderRadius = '5px';
     _input.style.padding = '5px';
 
+    if (_input.value == 'undefined') {
+        _input.value = '';
+    }
+
     // Button of the panel
     const btn = document.createElement('button');
     document.querySelector('.onyx-lib-prompt').appendChild(btn);
