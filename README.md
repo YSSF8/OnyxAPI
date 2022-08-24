@@ -1,23 +1,12 @@
 # Onyx Library (v1.4)
 A JavaScript library allows the user to use more function.
 
-### Features:
-* "**createElement**" is now with one line of coding.
-* Custom alert box.
-* Custom prompt box.
-* Custom "**console log**".
-* Added toast, a little message box appears and disappears quickly.
-
-### Changelog:
-* Fixed black text.
-* Added a <a href="https://github.com/YSSF8/OnyxLibrary#onyxconfirm">confirm-box</a>.
-
 ### How to download and import:
 * Download **OnyxLib.js**.
 * Put it in the folder where your HTML is.
 * Use the code bellow.
 ```html
-<script src="./OnyxLib.js"></script>
+<script src="./Onyx.min.js"></script>
 ```
 * Paste the code at the end of the HTML, before the end of **body**.
 
@@ -38,7 +27,7 @@ OnyxConfirm('text');
 ```javascript
 OnyxCreateElement('tag', 'parent', 'class', 'text', 'placeholder (if the tag is input tag)');
 ```
-#### OnyxPrint
+#### OnyxPrint (Replaced)
 ```javascript
 OnyxPrint('Text to view in the console', 'CSS Style');
 ```
@@ -54,9 +43,20 @@ OnyxNotice('text');
 ```javascript
 OnyxSysNotif('text', 'content');
 ```
-#### OnyxFollowPointer (New)
+#### OnyxFollowPointer
 ```javascript
 OnyxFollowPointer('element, .class, #id');
+```
+#### Console messages (New)
+```javascript
+// Normale message box
+log('Message', 'CSS style');
+
+// Warning message
+wrn('Message');
+
+// Error message
+err('Message')
 ```
 
 ### Screenshots:
