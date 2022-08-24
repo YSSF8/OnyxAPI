@@ -1,5 +1,5 @@
 // Simple alert box
-function OnyxAlert(alt) {
+function OnyxAlert(alt, btnTxt) {
     // Parent creation
     const parent = document.createElement('div');
     document.body.appendChild(parent);
@@ -29,7 +29,11 @@ function OnyxAlert(alt) {
     const btn = document.createElement('button');
     document.querySelector('.onyx-lib-alert').appendChild(btn);
     btn.classList.add('onyx-lib-btn');
-    btn.innerHTML = 'OK';
+    btn.innerHTML = btnTxt;
+
+    if (btn.innerHTML == 'undefined') {
+        btn.innerHTML = 'OK';
+    }
 
     // Appearing transition
     setTimeout(() => {
@@ -157,7 +161,7 @@ function OnyxPrompt(pmt, ipt) {
 }
 
 // Simpte confirm box
-function OnyxConfirm(alt) {
+function OnyxConfirm(alt, btnTxt) {
     // Parent creation
     const parent = document.createElement('div');
     parent.classList.add('onyx-lib-confirm');
@@ -423,5 +427,18 @@ function OnyxSysNotif(title, ncontent) {
     // Removes the notification after clicking on the "X" button by calling the function "Remove()"
     xbtn.addEventListener('click', () => {
         Remove();
+    });
+}
+
+// Makes elements follow the pointer
+function OnyxFollowPointer(cur) {
+    document.addEventListener('mousemove', e => {
+        const follow = document.querySelector(cur);
+        let x = e.clientX;
+        let y = e.clientY;
+        follow.style.left = x + 'px';
+        follow.style.top = y + 'px';
+        follow.style.position = 'fixed';
+        follow.style.pointerEvents = 'none';
     });
 }
