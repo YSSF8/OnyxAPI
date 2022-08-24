@@ -1,4 +1,4 @@
-# Onyx Library (v1.3)
+# Onyx Library (v1.4)
 A JavaScript library allows the user to use more function.
 
 ### Features:
@@ -53,6 +53,10 @@ OnyxNotice('text');
 #### OnyxSysNotif
 ```javascript
 OnyxSysNotif('text', 'content');
+```
+#### OnyxFollowPointer (New)
+```javascript
+OnyxFollowPointer('element, .class, #id');
 ```
 
 ### Screenshots:
