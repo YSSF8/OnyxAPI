@@ -1,4 +1,4 @@
-# Onyx Library (v1.5)
+# Onyx Library (v1.6)
 A JavaScript library allows the user to use more function.
 
 ### How to download and import:
@@ -47,7 +47,7 @@ OnyxSysNotif('text', 'content');
 ```javascript
 OnyxFollowPointer('element, .class, #id');
 ```
-#### Console messages (New)
+#### Console messages
 ```javascript
 // Normale message box
 log('Message', 'CSS style');
@@ -57,6 +57,14 @@ wrn('Message');
 
 // Error message
 err('Message')
+```
+#### Randomizers (new)
+```javascript
+// Random letter
+OnyxLtrRandom('element, .class, or #id');
+
+// Random number
+OnyxNumRandom('element, .class, or #id');
 ```
 
 ### Screenshots:
