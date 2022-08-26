@@ -4,9 +4,9 @@ A JavaScript library allows the user to use more function.
 ### How to download and import:
 * Download **Onyx.min.js**.
 * Put it in the folder where your HTML is.
-* Use the code bellow.
+* Copy the code bellow.
 ```html
-<script src="./Onyx.min.js"></script>
+<script src="./Onyx.min.js" type="text/javascript"></script>
 ```
 * Paste the code at the end of the HTML, before the end of **body**.
 
