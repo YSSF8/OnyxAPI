@@ -2,7 +2,7 @@
 A JavaScript library allows the user to use more function.
 
 ### How to download and import:
-* Download **OnyxLib.js**.
+* Download **Onyx.min.js**.
 * Put it in the folder where your HTML is.
 * Use the code bellow.
 ```html
