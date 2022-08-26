@@ -27,7 +27,7 @@ OnyxConfirm('text');
 ```javascript
 OnyxCreateElement('tag', 'parent', 'class', 'text', 'placeholder (if the tag is input tag)');
 ```
-#### OnyxPrint (Replaced)
+#### OnyxPrint (<a href="#console-messages">Replaced</a>)
 ```javascript
 OnyxPrint('Text to view in the console', 'CSS Style');
 ```
