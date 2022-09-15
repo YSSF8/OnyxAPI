@@ -66,7 +66,7 @@ OnyxLtrRandom('element, .class, or #id');
 // Random number
 OnyxNumRandom('element, .class, or #id');
 ```
-#### Counter (new)
+#### Counter
 ```javascript
 OnyxCount('element, .class, or #id');
 ```
