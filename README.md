@@ -1,4 +1,7 @@
 # Onyx Library (v1.7)
+
+Onyx Library will not get updated again for some reason.
+
 A JavaScript library allows the user to use more function.
 
 ### How to download and import:
