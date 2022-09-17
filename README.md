@@ -2,7 +2,7 @@
 
 Onyx Library will not get updated again for some reason.
 
-A JavaScript library allows the user to use more function. But there is a <a href="https://github.com/YSSF8/Xorio-Library">replacement</a> for it
+A JavaScript library allows the user to use more function. But there is a <a href="https://github.com/YSSF8/Xorio-Library">replacement</a> for it.
 
 ### How to download and import:
 * Download **Onyx.min.js**.
